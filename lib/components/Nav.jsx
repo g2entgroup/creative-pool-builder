@@ -2,7 +2,7 @@ import React from 'react'
 
 import { WalletInfo } from 'lib/components/WalletInfo'
 
-import PoolLogo from 'assets/images/pooltogether-logo.svg'
+import CreativeLogo from 'assets/images/creative-logo.svg'
 import PoolPLogo from 'assets/images/pooltogether-white-mark.svg'
 
 export const Nav = (props) => {
@@ -14,7 +14,7 @@ export const Nav = (props) => {
             <a href='/' title={'Back to home'}>
               <img
                 alt={`PoolTogether Logo`}
-                src={PoolLogo}
+                src={CreativeLogo}
                 className='mr-auto lg:m-0 w-32 hidden sm:block'
               />
               <img

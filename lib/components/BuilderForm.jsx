@@ -5,6 +5,7 @@ import { PRIZE_POOL_TYPE } from 'lib/constants'
 import { TokenDetailsCard } from 'lib/components/TokenDetailsCard'
 import { PrizePeriodCard } from 'lib/components/PrizePeriodCard'
 import { RNGCard } from 'lib/components/RNGCard'
+// import { DomainResolutionCard } from 'lib/components/DomainResolutionCard'
 import { PrizePoolTypeCard } from 'lib/components/PrizePoolTypeCard'
 import { FairnessCard } from 'lib/components/FairnessCard'
 import { COMPOUND_TOKENS } from 'lib/components/TokenDropdown'
@@ -147,6 +148,11 @@ export const BuilderForm = (props) => {
         <div className='font-bold mb-4 sm:mb-6 text-lg sm:text-5xl text-accent-1'>
           Prize Pool Parameters
         </div>
+
+        {/* <DomainResolutionCard
+          domainResolution={domainResolution}
+          updateDomainResolution={updateDomainResolution}
+        /> */}
 
         <PrizePoolTypeCard
           prizePoolType={prizePoolType}

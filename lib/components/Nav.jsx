@@ -3,6 +3,7 @@ import React from 'react'
 import { WalletInfo } from 'lib/components/WalletInfo'
 
 import CreativeLogo from 'assets/images/creative-logo.svg'
+import CreativeWLogo from 'assets/images/creative-logo-white-text.svg'
 // import PoolPLogo from 'assets/images/pooltogether-white-mark.svg'
 
 export const Nav = (props) => {
@@ -17,11 +18,11 @@ export const Nav = (props) => {
                 src={CreativeLogo}
                 className='mr-auto lg:m-0 w-16 sm:block'
               />
-              {/* <img
-                alt={`PoolTogether P Logo`}
-                src={PoolPLogo}
-                className='mr-auto lg:m-0 w-6 block sm:hidden'
-              /> */}
+              <img
+                alt={`Creative W Logo`}
+                src={CreativeWLogo}
+                className='mr-auto lg:m-0 w-6 hidden sm:hidden'
+              />
             </a>
           </div>
 

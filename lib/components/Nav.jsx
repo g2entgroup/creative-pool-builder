@@ -3,7 +3,7 @@ import React from 'react'
 import { WalletInfo } from 'lib/components/WalletInfo'
 
 import CreativeLogo from 'assets/images/creative-logo.svg'
-import PoolPLogo from 'assets/images/pooltogether-white-mark.svg'
+// import PoolPLogo from 'assets/images/pooltogether-white-mark.svg'
 
 export const Nav = (props) => {
   return (
@@ -13,15 +13,15 @@ export const Nav = (props) => {
           <div className='w-2/5 lg:w-1/5 justify-start h-full flex items-center truncate'>
             <a href='/' title={'Back to home'}>
               <img
-                alt={`PoolTogether Logo`}
+                alt={`Creative Logo`}
                 src={CreativeLogo}
-                className='mr-auto lg:m-0 w-32 hidden sm:block'
+                className='mr-auto lg:m-0 w-16 sm:block'
               />
-              <img
+              {/* <img
                 alt={`PoolTogether P Logo`}
                 src={PoolPLogo}
                 className='mr-auto lg:m-0 w-6 block sm:hidden'
-              />
+              /> */}
             </a>
           </div>
 

@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import { BuilderUI } from 'lib/components/BuilderUI'
 import { WalletContext } from 'lib/components/WalletContextProvider'
 
-import Dumbbell from 'assets/images/dumbbell.png'
+// import Dumbbell from 'assets/images/dumbbell.png'
 import { SUPPORTED_NETWORKS } from 'lib/constants'
 import { chainIdToName } from 'lib/utils/chainIdToName'
 
@@ -23,15 +23,16 @@ export const IndexContent = (props) => {
     <>
       <div className='flex mt-10 mb-10 sm:mb-20 lg:justify-between'>
         <div>
-          <h1 className='text-accent-1 title text-xl sm:text-6xl'>Prize Pool Builder v3.3.0</h1>
+          <h1 className='text-accent-1 title text-xl sm:text-6xl'>Campaign generator</h1>
 
           <p className='text-accent-1 text-base sm:text-2xl max-w-3xl'>
-            This builder creates new Prize Pools with a prize strategy. This strategy allows prize
-            awarding periodically to multiple randomly selected winners.
+            Use this generator to create a liquidity campaign. You decide how the funds generated
+            will be awarded among participants and how you want to interact with the assets injected
+            into the campaign.
           </p>
 
           <a
-            href='https://docs.pooltogether.com/protocol/builders'
+            href='https://creative-platform.gitbook.io/the-creative-platform/'
             target='_blank'
             className='trans text-xs sm:text-base no-underline border-0 active:outline-none hover:outline-none focus:outline-none'
           >
@@ -40,11 +41,11 @@ export const IndexContent = (props) => {
             </button>
           </a>
         </div>
-        <img
+        {/* <img
           src={Dumbbell}
           className='hidden sm:block sm:w-32 lg:w-48 sm:ml-10'
           style={{ height: 'min-content' }}
-        />
+        /> */}
       </div>
 
       {address ? (

@@ -7,15 +7,19 @@ import DiscordLogo from 'assets/images/discord-footer.svg'
 import TwitterFooterLogo from 'assets/images/twitter-footer.svg'
 
 export const Footer = () => {
-  let mailHref = 'mailto:hello@pooltogether.com'
-  let twitterHref = 'https://twitter.com/PoolTogether_'
+  let mailHref = 'mailto:info@creativeplatform.io'
+  let twitterHref = 'https://twitter.com/CreativeCrtv'
 
   return (
     <footer className='footer w-full text-default text-sm'>
       <div className='nav-and-footer-container'>
         <div className='flex flex-col sm:flex-row justify-between mt-3 sm:mt-4 lg:mt-6 pb-5 lg:pb-8'>
           <div className=''>
-            <a title='faq' className='trans mr-4 sm:ml-8' href='https://www.pooltogether.com/faq'>
+            <a
+              title='faq'
+              className='trans mr-4 sm:ml-8'
+              href='https://www.creativeplatform.io/faq'
+            >
               faq
             </a>
             {/* <a
@@ -33,17 +37,25 @@ export const Footer = () => {
         >
           stats
         </a> */}
-            <a title='readTerms' className='trans mr-4' href='https://www.pooltogether.com/terms'>
+            <a
+              title='readTerms'
+              className='trans mr-4'
+              href='https://www.creativeplatform.io/terms'
+            >
               terms
             </a>
             <a
               title='auditAndSecurityInfo'
               className='trans mr-4'
-              href='https://www.pooltogether.com/audits'
+              href='https://www.creativeplatform.io/audits'
             >
               audits
             </a>
-            <a title='getAnswers' className='trans mr-4' href='https://help.pooltogether.com'>
+            <a
+              title='getAnswers'
+              className='trans mr-4'
+              href='https://www.help.creativeplatform.io/'
+            >
               help
             </a>
           </div>
@@ -61,7 +73,7 @@ export const Footer = () => {
 
               <a
                 className='inline-block trans mr-3 lg:mr-0 lg:ml-4 w-5 h-5 '
-                href='https://discord.gg/hxPhPDW'
+                href='https://discord.new/Qcd6SEHAExZA'
                 target='_blank'
                 rel='noreferrer noopener'
               >
@@ -70,7 +82,7 @@ export const Footer = () => {
 
               <a
                 className='inline-block trans mr-3 lg:mr-0 lg:ml-4 w-5 h-5 '
-                href='https://github.com/pooltogether'
+                href='https://github.com/g2entgroup'
                 target='_blank'
                 rel='noreferrer noopener'
               >
@@ -79,7 +91,7 @@ export const Footer = () => {
 
               <a
                 className='inline-block trans mr-3 lg:mr-0 lg:ml-4 w-5 h-5 '
-                href='https://medium.com/pooltogether'
+                href='https://medium.com/@creativeplatform'
                 target='_blank'
                 rel='noreferrer noopener'
               >

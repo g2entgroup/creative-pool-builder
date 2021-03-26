@@ -1,7 +1,8 @@
 import React from 'react'
+import Link from 'next/link'
 
 export const InputLabel = (props) => {
-  const { primary, secondary, description, children, className } = props
+  const { primary, secondary, description, link, link_placeholder, children, className } = props
 
   return (
     <div className={className}>
@@ -13,6 +14,11 @@ export const InputLabel = (props) => {
       )}
       {description && (
         <div className='mb-4 sm:mb-4 text-sm sm:text-base text-accent-1'>{description}</div>
+      )}
+      {link && (
+        <Link href={link}>
+          <a>{link_placeholder}</a>
+        </Link>
       )}
       {children}
     </div>

@@ -16,9 +16,11 @@ export const InputLabel = (props) => {
         <div className='mb-4 sm:mb-4 text-sm sm:text-base text-accent-1'>{description}</div>
       )}
       {link && (
-        <Link href={link}>
-          <a>{link_placeholder}</a>
-        </Link>
+        <div className='mb-4 sm:mb-4 text-sm sm:text-base text-accent-1'>
+          <Link href={link}>
+            <a>{link_placeholder}</a>
+          </Link>
+        </div>
       )}
       {children}
     </div>

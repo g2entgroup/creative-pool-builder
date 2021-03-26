@@ -5,7 +5,7 @@ import { PRIZE_POOL_TYPE } from 'lib/constants'
 import { TokenDetailsCard } from 'lib/components/TokenDetailsCard'
 import { PrizePeriodCard } from 'lib/components/PrizePeriodCard'
 import { RNGCard } from 'lib/components/RNGCard'
-// import { DomainResolutionCard } from 'lib/components/DomainResolutionCard'
+import { DomainResolutionCard } from 'lib/components/DomainResolutionCard'
 import { PrizePoolTypeCard } from 'lib/components/PrizePoolTypeCard'
 import { FairnessCard } from 'lib/components/FairnessCard'
 import { COMPOUND_TOKENS } from 'lib/components/TokenDropdown'
@@ -59,7 +59,8 @@ export const BuilderForm = (props) => {
     ticketSymbol,
     creditMaturationInDays,
     ticketCreditLimitPercentage,
-    numberOfWinners
+    numberOfWinners,
+    domainResolution
   } = vars
 
   const {
@@ -141,7 +142,10 @@ export const BuilderForm = (props) => {
     updateTicketLabels(PRIZE_POOL_TYPE.compound, COMPOUND_TOKENS[cToken].value)
     setCToken(cToken)
   }
-
+  // const updateDomainResolution = (cToken) => {
+  //   updateTicketLabels(PRIZE_POOL_TYPE.compound, COMPOUND_TOKENS[cToken].value)
+  //   setCToken(cToken)
+  // }
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -149,10 +153,10 @@ export const BuilderForm = (props) => {
           Prize Pool Parameters
         </div>
 
-        {/* <DomainResolutionCard
-          domainResolution={domainResolution}
-          updateDomainResolution={updateDomainResolution}
-        /> */}
+        <DomainResolutionCard
+        // domainResolution={domainResolution}
+        // updateDomainResolution={updateDomainResolution}
+        />
 
         <PrizePoolTypeCard
           prizePoolType={prizePoolType}

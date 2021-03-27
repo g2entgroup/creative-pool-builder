@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
 export const Meta = ({ title }) => {
-  const defaultTitle = 'PoolTogether - Prize Pool Builder'
+  const defaultTitle = 'Creative - Brand Pool Builder'
   title = title ? `${title} - ${defaultTitle}` : defaultTitle
 
   const url = `https://builder.pooltogether.com`
-  const description = `Create PoolTogether Prize Pools with this builder`
+  const description = `Create Creative Brand Pools`
   const keywords = 'ethereum'
-  const twitterHandle = '@PoolTogether_'
+  const twitterHandle = '@creativecrtv'
 
   return (
     <>
@@ -19,14 +19,14 @@ export const Meta = ({ title }) => {
 
         <link rel='stylesheet' href='https://use.typekit.net/ezg2vko.css' />
 
-        <link rel='icon' type='image/png' href='/favicon.png' />
+        <link rel='icon' type='image/x-icon' href='/tokenlogo.ico' />
 
         <link rel='stylesheet' href='/animate.css' />
 
         <meta name='theme-color' content='#1a083a' />
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
-        <meta name='author' content='PoolTogether' />
+        <meta name='author' content='Creative Platform' />
 
         <meta property='og:title' content={title} />
         <meta property='og:description' content={description} />

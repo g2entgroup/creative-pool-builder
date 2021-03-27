@@ -23,10 +23,10 @@ export const IndexContent = (props) => {
     <>
       <div className='flex mt-10 mb-10 sm:mb-20 lg:justify-between'>
         <div>
-          <h1 className='text-accent-1 title text-xl sm:text-6xl'>Prize Pool Builder v3.3.0</h1>
+          <h1 className='text-accent-1 title text-xl sm:text-6xl'>Brand Campaign Pool<span className="text-sm"> v3.3.0</span></h1>
 
           <p className='text-accent-1 text-base sm:text-2xl max-w-3xl'>
-            This builder creates new Prize Pools with a prize strategy. This strategy allows prize
+            This creates new Brand Campaign Pools with a prize strategy. This strategy allows prize
             awarding periodically to multiple randomly selected winners.
           </p>
 

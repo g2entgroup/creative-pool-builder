@@ -1725,6 +1725,13 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
+"@graphprotocol/graph-ts@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@graphprotocol/graph-ts/-/graph-ts-0.20.0.tgz#ed31ffd59a6aa9703a1ec5079f137a81220443cb"
+  integrity sha512-+R0Tu/MD4Fiq0Fo+v1l+xznz+ZrciQKWlzMtXjDrhM70vlMNVL9wDmf90MVFYpslgqIfw024hT6XwlmyNyOWbQ==
+  dependencies:
+    assemblyscript "https://github.com/AssemblyScript/assemblyscript#36040d5b5312f19a025782b5e36663823494c2f3"
+
 "@hapi/hoek@^9.0.0":
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.1.tgz#9daf5745156fd84b8e9889a2dc721f0c58e894aa"
@@ -2047,6 +2054,11 @@
     ethereumjs-util "5.2.0"
     penpal "3.0.7"
     pocket-js-core "0.0.3"
+
+"@protobufjs/utf8@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
+  integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
 "@reach/auto-id@0.11.2":
   version "0.11.2"
@@ -3146,6 +3158,17 @@ asn1@~0.2.3:
   dependencies:
     safer-buffer "~2.1.0"
 
+"assemblyscript@git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3":
+  version "0.6.0"
+  resolved "git+https://github.com/AssemblyScript/assemblyscript.git#36040d5b5312f19a025782b5e36663823494c2f3"
+  dependencies:
+    "@protobufjs/utf8" "^1.1.0"
+    binaryen "77.0.0-nightly.20190407"
+    glob "^7.1.3"
+    long "^4.0.0"
+    opencollective-postinstall "^2.0.0"
+    source-map-support "^0.5.11"
+
 assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
@@ -3934,6 +3957,11 @@ binary-extensions@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.1.0.tgz#30fa40c9e7fe07dbc895678cd287024dea241dd9"
   integrity sha512-1Yj8h9Q+QDF5FzhMs/c9+6UntbD5MkRfRwac8DoEm9ZfUBZ7tZ55YcGVAzEe4bXsdQHEk+s9S5wsOKVdZrw0tQ==
+
+binaryen@77.0.0-nightly.20190407:
+  version "77.0.0-nightly.20190407"
+  resolved "https://registry.yarnpkg.com/binaryen/-/binaryen-77.0.0-nightly.20190407.tgz#fbe4f8ba0d6bd0809a84eb519d2d5b5ddff3a7d1"
+  integrity sha512-1mxYNvQ0xywMe582K7V6Vo2zzhZZxMTeGHH8aE/+/AND8f64D8Q1GThVY3RVRwGY/4p+p95ccw9Xbw2ovFXRIg==
 
 bind-decorator@^1.0.11:
   version "1.0.11"
@@ -8997,6 +9025,11 @@ loglevel@^1.7.1:
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.7.1.tgz#005fde2f5e6e47068f935ff28573e125ef72f197"
   integrity sha512-Hesni4s5UkWkwCGJMQGAh71PaLUmKFM60dHvq0zi/vDhhrzuk+4GgNbTXJ12YYQJn6ZKBDNIjYcuQGKudvqrIw==
 
+long@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
+  integrity sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
+
 looper@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/looper/-/looper-2.0.0.tgz#66cd0c774af3d4fedac53794f742db56da8f09ec"
@@ -10031,6 +10064,11 @@ onetime@^5.1.0:
   integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
   dependencies:
     mimic-fn "^2.1.0"
+
+opencollective-postinstall@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
+  integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
 
 opener@^1.5.1:
   version "1.5.2"
@@ -11895,7 +11933,7 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.13, source-map-support@^0.5.17, source-map-support@~0.5.12:
+source-map-support@^0.5.11, source-map-support@^0.5.13, source-map-support@^0.5.17, source-map-support@~0.5.12:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==

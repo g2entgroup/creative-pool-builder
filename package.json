@@ -25,10 +25,12 @@
     "@sentry/tracing": "^5.29.2",
     "@unstoppabledomains/resolution": "^2.1.1",
     "autoprefixer": "^9.7.6",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "ethers": "^5.0.32",
     "feather-icons-react": "^0.4.1",
     "js-cookie": "^2.2.1",
+    "js-sha3": "^0.8.0",
     "lodash": "^4.17.20",
     "next": "9.5.3",
     "next-images": "^1.4.0",
@@ -42,6 +44,7 @@
     "truffle-privatekey-provider": "^1.5.0"
   },
   "devDependencies": {
+    "@graphprotocol/graph-ts": "^0.20.0",
     "@next/bundle-analyzer": "^9.4.4",
     "cypress": "^6.2.1",
     "hardhat": "^2.0.6",

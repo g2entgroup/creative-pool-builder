@@ -1,12 +1,10 @@
 # When the application is loaded on a non-web3 browser this is the network that the browser will use.
 # Note: this is passed directly to ethers.js so you'll want to make sure ethers understand the name.
-export NEXT_JS_FORTMATIC_API_KEY=<YOUR_FORTMATIC_API_KEY>
-export NEXT_JS_FORTMATIC_PRODUCTION_API_KEY=<YOUR_FORTMATIC_PRODUCTION_API_KEY>
+export NEXT_JS_FORTMATIC_API_KEY=pk_test_7A74D01E173B7BB1
+export NEXT_JS_FORTMATIC_PRODUCTION_API_KEY=pk_live_1955A5819D105955
 
-export NEXT_JS_PORTIS_API_KEY=<YOUR_PORTIS_KEY>
+export NEXT_JS_PORTIS_API_KEY=44ecad92-0fe0-48d1-9211-97d92951370d
 
-export NEXT_JS_INFURA_ID=<YOUR_INFURA_ID>
+export NEXT_JS_INFURA_ID=ff5a5c50d1e649bdb777f80813747e3d
 
-export NEXT_JS_PORTIS_API_KEY=<YOUR_PORTIS_API_KEY>
-
-export ALCHEMY_API_KEY=<YOUR_ALCHEMY_API_KEY>
+export ALCHEMY_API_KEY=QllwbDaZ9bQCqvsTtReaOObuLha38icb

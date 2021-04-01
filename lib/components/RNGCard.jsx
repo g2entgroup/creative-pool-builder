@@ -18,10 +18,10 @@ export const RNGCard = (props) => {
   }
 
   const rngServices = {
-    // blockhash: {
-    //   value: 'blockhash',
-    //   view: 'Blockhash'
-    // }
+    blockhash: {
+      value: 'blockhash',
+      view: 'Blockhash'
+    }
   }
 
   if (CONTRACT_ADDRESSES[chainId].RNG_SERVICE.chainlink) {
@@ -39,11 +39,10 @@ export const RNGCard = (props) => {
   }
 
   let rngDetailsDescription
-  // if (currentRngService === 'blockhash') {
-  //   rngDetailsDescription =
-  //     'The Blockhash RNG uses a future blockhash as the random number. This is the least secure method of random number generation, but also the simplest and cheapest.'
-  // } else 
-  if (currentRngService === 'chainlink') {
+  if (currentRngService === 'blockhash') {
+    rngDetailsDescription =
+      'The Blockhash RNG uses a future blockhash as the random number. This is the least secure method of random number generation, but also the simplest and cheapest.'
+  } else if (currentRngService === 'chainlink') {
     rngDetailsDescription = (
       <>
         This uses ChainLink to generate a random number for your prize pool, it is more secure than

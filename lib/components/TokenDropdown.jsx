@@ -1,8 +1,8 @@
 import React, { useContext, useMemo, useState } from 'react'
 
+import { CONTRACT_ADDRESSES } from 'lib/constants'
 import { DropdownInputGroup } from 'lib/components/DropdownInputGroup'
 import { WalletContext } from 'lib/components/WalletContextProvider'
-import { CONTRACT_ADDRESSES } from 'lib/constants'
 
 import BatSvg from 'assets/images/bat.svg'
 import DaiSvg from 'assets/images/dai.svg'
@@ -113,16 +113,14 @@ export const TokenDropdown = (props) => {
   const formatValue = (key) => COMPOUND_TOKENS[key].view
 
   return (
-    <>
-      <DropdownInputGroup
-        id='token-dropdown'
-        placeHolder='Select a token to be deposited and used as a yield source'
-        label={'Deposit token'}
-        formatValue={formatValue}
-        onValueSet={onValueSet}
-        current={currentToken}
-        values={compoundTokens}
-      />
-    </>
+    <DropdownInputGroup
+      id='token-dropdown'
+      placeHolder='Select a token to be deposited and used as a yield source'
+      label={'Deposit token'}
+      formatValue={formatValue}
+      onValueSet={onValueSet}
+      current={currentToken}
+      values={compoundTokens}
+    />
   )
 }
